@@ -17,3 +17,18 @@ function today {
 
 today
 
+# The function parameter is started from $1, while the $0 is the name of the
+# current executing shell script.
+#
+# To invoke the function use the following syntax:
+#   greeting param1 param2
+function greeting() {
+    name=$1
+    echo "\$0 is: $0"
+    echo "\$@ is: $@"
+    echo "Hello ${name}!"
+}
+
+greeting Xingyu
+greeting Mountain Top
+
