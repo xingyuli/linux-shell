@@ -1,4 +1,4 @@
 linux-shell
 ===========
 
-Stuff when progamming in shell.
+Stuff when programming in shell.
