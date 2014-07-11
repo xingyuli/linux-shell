@@ -32,3 +32,9 @@ function greeting() {
 greeting Xingyu
 greeting Mountain Top
 
+function display_current_func_name() {
+    echo "the current func name is: $FUNCNAME"
+}
+
+display_current_func_name
+
