@@ -10,6 +10,18 @@
 #                                                                              #
 ################################################################################
 
+# A couple of important points about functions:
+# 1. They must appear before you attempt to use them.
+# 2. The function body (the portions of the function between the { and }
+#    characters) must contain at least one valid command.
+#
+# function this_func_will_not_execute_without_error
+# {
+#
+# }
+#
+# The simple way to fix the above function is to pace a return statement.
+
 function today {
     echo "Today's date is:"
     date +"%A, %B %-d, %Y"
